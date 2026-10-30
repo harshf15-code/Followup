@@ -13,6 +13,7 @@ and uses AI to map it out and help you get it done.
 [![macOS 14+](https://img.shields.io/badge/macOS-14%2B-3B82F6?style=flat-square&logo=apple&logoColor=white)](#install)
 [![Swift](https://img.shields.io/badge/Swift-native-10B981?style=flat-square&logo=swift&logoColor=white)](Package.swift)
 [![CI](https://img.shields.io/github/actions/workflow/status/harshf15-code/Followup/ci.yml?style=flat-square&label=tests)](https://github.com/harshf15-code/Followup/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/followup-mac?style=flat-square&color=EF4444&label=npx)](https://www.npmjs.com/package/followup-mac)
 [![License: MIT](https://img.shields.io/github/license/harshf15-code/Followup?style=flat-square&color=A855F7)](LICENSE)
 
 [**Download for Mac**](https://github.com/harshf15-code/Followup/releases/latest) · [One-line install](#install) · [How it works](#how-it-works) · [FAQ](#faq) · [Build from source](#build-from-source)
@@ -86,7 +87,7 @@ curl -fsSL https://raw.githubusercontent.com/harshf15-code/Followup/main/install
 or, if you have Node.js:
 
 ```sh
-npx github:harshf15-code/Followup
+npx followup-mac
 ```
 
 Both download the latest release into `/Applications` and launch it. Because the app isn't downloaded through a browser, macOS doesn't show the "unidentified developer" block. [Read the script](install.sh) first if you like.

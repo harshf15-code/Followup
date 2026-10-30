@@ -1,7 +1,7 @@
 #!/bin/bash
 # Installs (or updates) Followup from the latest GitHub release.
 #   curl -fsSL https://raw.githubusercontent.com/harshf15-code/Followup/main/install.sh | bash
-#   npx github:harshf15-code/Followup
+#   npx followup-mac   (or: npx github:harshf15-code/Followup)
 set -euo pipefail
 
 REPO="harshf15-code/Followup"
