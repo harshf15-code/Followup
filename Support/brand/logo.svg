@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A2740"/><stop offset="1" stop-color="#111019"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FCD34D"/><stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="0.5" cy="0" r="0.9">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.10"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feFlood flood-color="#F59E0B" flood-opacity="0.55"/><feComposite in2="b" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#bg)"/>
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#sheen)"/>
+  <rect x="101.5" y="101.5" width="821" height="821" rx="184.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="3"/>
+  <path d="M669.1,265.9 A292,292 0 0 1 803.7,499.0 L629.3,499.0 A118,118 0 0 0 581.9,416.9 Z" fill="#3B82F6" opacity="0.92"/><path d="M803.7,525.0 A292,292 0 0 1 669.1,758.1 L581.9,607.1 A118,118 0 0 0 629.3,525.0 Z" fill="#10B981" opacity="0.92"/><path d="M646.6,771.1 A292,292 0 0 1 377.4,771.1 L464.6,620.1 A118,118 0 0 0 559.4,620.1 Z" fill="#A855F7" opacity="0.92"/><path d="M354.9,758.1 A292,292 0 0 1 220.3,525.0 L394.7,525.0 A118,118 0 0 0 442.1,607.1 Z" fill="#64748B" opacity="0.92"/><path d="M220.3,499.0 A292,292 0 0 1 354.9,265.9 L442.1,416.9 A118,118 0 0 0 394.7,499.0 Z" fill="#EF4444" opacity="0.92"/>
+  <path d="M377.4,218.9 A292,292 0 0 1 646.6,218.9 L559.4,369.9 A118,118 0 0 0 464.6,369.9 Z" fill="url(#amber)" filter="url(#glow)"/>
+  <circle cx="512" cy="512" r="46" fill="#F8F7F2"/>
+</svg>

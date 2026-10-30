@@ -1,0 +1,17 @@
+name: Feature request
+description: Suggest an idea for Followup
+labels: [enhancement]
+body:
+  - type: textarea
+    id: moment
+    attributes:
+      label: When would you use it?
+      description: Describe the moment you wished Followup did this.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like it to do?
+    validations:
+      required: true
