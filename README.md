@@ -15,7 +15,7 @@ and uses AI to map it out and help you get it done.
 [![CI](https://img.shields.io/github/actions/workflow/status/harshf15-code/Followup/ci.yml?style=flat-square&label=tests)](https://github.com/harshf15-code/Followup/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/github/license/harshf15-code/Followup?style=flat-square&color=A855F7)](LICENSE)
 
-[**Download for Mac**](https://github.com/harshf15-code/Followup/releases/latest) · [How it works](#how-it-works) · [Install](#install) · [FAQ](#faq) · [Build from source](#build-from-source)
+[**Download for Mac**](https://github.com/harshf15-code/Followup/releases/latest) · [One-line install](#install) · [How it works](#how-it-works) · [FAQ](#faq) · [Build from source](#build-from-source)
 
 <img src="docs/images/banner.png" alt="Followup: the capture wheel over a mind map" width="880">
 
@@ -77,10 +77,31 @@ Each type of capture gets its own guidance. A **Follow-up** maps the people, the
 
 ## Install
 
-1. **Download** the latest `Followup-x.y.z.dmg` from [Releases](https://github.com/harshf15-code/Followup/releases/latest) and drag **Followup** into **Applications**.
-2. **Open it.** Followup isn't notarized by Apple yet, so macOS blocks the first launch. Click **Done**, open **System Settings → Privacy & Security**, scroll down and click **Open Anyway**. You only do this once.
-3. **Allow Accessibility** when asked. Followup needs it to read the text you've selected.
-4. **Pick your AI** (menu bar icon → **Settings…**):
+**One line in Terminal** (also updates an existing install):
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/harshf15-code/Followup/main/install.sh | bash
+```
+
+or, if you have Node.js:
+
+```sh
+npx github:harshf15-code/Followup
+```
+
+Both download the latest release into `/Applications` and launch it. Because the app isn't downloaded through a browser, macOS doesn't show the "unidentified developer" block. [Read the script](install.sh) first if you like.
+
+<details>
+<summary><b>Or install the DMG by hand</b></summary>
+
+1. Download the latest `Followup-x.y.z.dmg` from [Releases](https://github.com/harshf15-code/Followup/releases/latest) and drag **Followup** into **Applications**.
+2. Followup isn't notarized by Apple yet, so macOS blocks the first launch. Click **Done**, open **System Settings → Privacy & Security**, scroll down and click **Open Anyway**. You only do this once.
+</details>
+
+Then:
+
+1. **Allow Accessibility** when asked. Followup needs it to read the text you've selected.
+2. **Pick your AI** (menu bar icon → **Settings…**):
 
 <details>
 <summary><b>Option A: your Claude account (default)</b></summary>
@@ -201,6 +222,7 @@ swift build
 - [ ] Custom keyboard shortcut
 - [ ] Search across captures
 - [ ] Reminders and due dates
+- [x] One-line install (curl or npx)
 - [ ] Notarized builds and a Homebrew cask
 - [ ] Export to Markdown, Things and Apple Reminders
 - [ ] Optional sync between Macs

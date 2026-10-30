@@ -1,0 +1,22 @@
+{
+  "name": "followup-mac",
+  "version": "0.1.0",
+  "description": "Installer for Followup: select text anywhere on your Mac, press Control-F, and turn it into a plan.",
+  "bin": {
+    "followup-mac": "install.sh"
+  },
+  "files": [
+    "install.sh"
+  ],
+  "os": [
+    "darwin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshf15-code/Followup.git"
+  },
+  "homepage": "https://github.com/harshf15-code/Followup#readme",
+  "keywords": ["macos", "menubar", "productivity", "ai", "claude", "ollama", "mind-map"],
+  "author": "Harsh Sharma",
+  "license": "MIT"
+}
